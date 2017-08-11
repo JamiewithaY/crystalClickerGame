@@ -1,0 +1,11 @@
+	.crystalImage {
+		width:60px;
+		height:60px;
+
+  	}
+
+  	#directions {
+  		background: yellow;
+  		color: green;
+  		font-family: 'Roboto', sans-serif;
+  	}

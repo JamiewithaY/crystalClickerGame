@@ -1,13 +1,13 @@
 	
 	$(document).ready(function(){
 
-	
-	var targetNumber = 55//Math.floor(Math.random()* 10)+1;
-	
+	var targetNumber = Math.floor(Math.random()* (120-19))+19;
+	var score = "";
 
 	$("#target").html(targetNumber);
 	var counter = 0;
-	var numberOptions = [1, 3, 5, 6];
+	// var arr = []
+	var numberOptions = [1, 3, 5, 9];
 	// var numberIndex = Math.floor(Math.random() * 2);
 	// var increment = numberOptions[numberIndex];
 
@@ -18,24 +18,24 @@
 		imageCrystal.addClass("gems");
 		//attach the images
 		imageCrystal.attr("src","http://www.galleries.com/Rock_Crystal/rock_cry.jpg" );
-		//data attribute so I can get a value for one of these
+		//data attribute so I can assign a value for one of these
 		imageCrystal.attr("dataCrystalValue", numberOptions[i]);
 		// add the new images to the existing div id=gemDiv
 		$("#gemDiv").append(imageCrystal);
 	}
 
 
-	$(".crystalImage").on("click", function(){
+	$(".gems").on("click", function(){
 		
 		// this is the jQuery version of the thing that got clicked
 		var increment =$(this).attr("dataCrystalValue");
 		counter += parseInt(increment);
 
-		alert("You clicked a crystal: " + counter);
+		$("#playerScore").html(increment);
 
-		if (counter == targetNumber){
+		if (increment == targetNumber){
 		alert("You won!");
-	} else if (counter > targetNumber){
+	} else if (increment > targetNumber){
 		alert("You lost");
 	}
 

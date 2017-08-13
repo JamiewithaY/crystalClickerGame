@@ -1,6 +1,27 @@
-	.crystalImage {
-		width:60px;
-		height:60px;
+	body {
+		background-image: url(http://c.dryicons.com/files/graphics_previews/DD-Abstract-Background-40295-Preview.jpg) ;
+	}
+
+	h1{
+		background-color: blue;
+		text-align: center;
+		text-decoration: bold;
+		color: white;
+		width: 300px;
+		height: 70px
+				
+	}
+
+	#gemDiv {
+		width: 600px;
+
+	}
+
+	.gems {
+		width:120px;
+		height: 120px;
+		margin: 10px;
+
 
   	}
 
@@ -8,4 +29,41 @@
   		background: yellow;
   		color: green;
   		font-family: 'Roboto', sans-serif;
+  		margin: 20px;
+  		line-height: 2;
+  		padding: 10;
   	}
+
+  
+
+  	#g{
+  		float: left;
+  		background: green;
+  		width: 30%;
+  		height: 80px;
+  		text-align: center;
+		text-decoration: bold;
+  		
+  	}
+
+  	#p{
+  		float: left;
+  		background: pink;
+  		width: 30%;
+  		height: 80px;
+  		margin: 10px;
+  		text-align: center;
+		text-decoration: bold;
+  	}
+
+
+	.winsloss{
+		float: left;
+		background-color: orange; 
+		width: 30%;
+		height: 80px;
+		text-align: center;
+		text-decoration: bold;
+
+	}
+
